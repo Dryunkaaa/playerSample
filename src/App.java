@@ -52,14 +52,7 @@ public class App extends Application {
         button1.setTranslateY(60);
         button1.setOnAction(event -> mediaPlayer.pause());
 
-        Button button2 = new Button("Seek");
-        button2.setTranslateX(10);
-        button2.setTranslateY(110);
-        button2.setOnAction(event -> {
-            mediaPlayer.seek(Duration.millis(80000));
-        });
-
-        root.getChildren().addAll(button, button1, button2, slider);
+        root.getChildren().addAll(button, button1, slider);
     }
 
 }
